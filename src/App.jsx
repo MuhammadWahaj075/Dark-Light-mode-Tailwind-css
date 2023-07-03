@@ -27,7 +27,7 @@ function App() {
       <div className="h-screen bg-white dark:bg-black dark:text-white">
         {isSun ? (
           <button
-            className="p-4 rounded mt-10 dark:text-white"
+            className="px-10 rounded mt-10 dark:text-white"
             onClick={handleThemeSwitch}
           >
             {isSun ? (
@@ -71,7 +71,7 @@ function App() {
           </button>
         ) : (
           <button
-            className="bg-white rounded mt-10 dark:text-black"
+            className="px-10 bg-white rounded mt-10 dark:text-black"
             onClick={handleThemeSwitch}
           >
             {isSun ? (
