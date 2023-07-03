@@ -3,8 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-h1 {
+  h1 {
+    @apply font-heading text-primaryYellow;
+  }
 
-@apply font-heading text-primaryYellow
+  :root {
+    --color-bkg: 210deg 40% 98%;
+    --color-content: 217deg 32.6% 17.5%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-bkg: 217deg 32.6% 17.5% ;
+      --color-content: 210deg 40% 98%;
+    }
+  }
+  :root[data-theme="light"] {
+     --color-bkgLight: white ;
+     --color-contentLight: black;
 }
 }

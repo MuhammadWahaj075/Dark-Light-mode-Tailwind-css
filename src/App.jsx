@@ -24,12 +24,9 @@ function App() {
   console.log("🚀 ~ file: App.jsx:24 ~ handleThemeSwitch ~ isSun:", isSun);
   return (
     <>
-      <div className="h-screen bg-white dark:bg-black dark:text-white">
+      <div className="h-screen bg-bkg text-content dark:bg-bkglight dark:text-contentLight">
         {isSun ? (
-          <button
-            className="px-10 rounded mt-10 dark:text-white"
-            onClick={handleThemeSwitch}
-          >
+          <button className="px-10 rounded mt-10" onClick={handleThemeSwitch}>
             {isSun ? (
               <svg
                 className="h-8 w-8 "
@@ -48,7 +45,7 @@ function App() {
               </svg>
             ) : (
               <svg
-                className="h-8 w-8 text-yellow-300 dark:text-black "
+                className="h-8 w-8 text-yellow-300 "
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -71,7 +68,7 @@ function App() {
           </button>
         ) : (
           <button
-            className="px-10 bg-white rounded mt-10 dark:text-black"
+            className=" ml-9 text-center  w-10 rounded mt-10 "
             onClick={handleThemeSwitch}
           >
             {isSun ? (
@@ -115,15 +112,15 @@ function App() {
           </button>
         )}
 
-        <h1 className="text-primaryBlue  font-bold text-4xl text-center dark:text-white">
+        <h1 className="text-primaryBlue  font-bold text-4xl text-center ">
           {" "}
           Hello World
         </h1>
-        <h1 className="text-primaryPurple  text-4xl text-center mt-[8rem] dark:text-white">
+        <h1 className="text-primaryPurple  text-4xl text-center mt-[8rem] ">
           {" "}
           Hello World
         </h1>
-        <h1 className="text-SecondaryGray text-5xl text-center mt-[8rem] dark:text-white">
+        <h1 className="text-SecondaryGray text-5xl text-center mt-[8rem] ">
           {" "}
           Hello World
         </h1>
